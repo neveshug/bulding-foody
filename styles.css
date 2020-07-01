@@ -1,0 +1,186 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap";
+
+*{
+    margin: 0;
+    padding: 0;
+    border:0;
+}
+
+:root{
+    --color-bg: #FBDFDB;
+}
+
+body{
+    font-family:'Roboto', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    background-color: cornsilk;
+}
+
+.menu{
+    margin-left: 230px;
+    display: flex;
+    padding: 30px;
+    width: 25%;
+}
+
+.menu img{
+    width: 70px;
+}
+
+.menu a{
+    color: #111;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.primary-content{
+    margin: 0 auto;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 800px;
+    background-color: var(--color-bg);
+    border-radius: 30px;
+}
+
+.paragraphs h1{
+    font-size: 32px;
+    font-weight: bold;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.paragraphs p{
+    width: 300px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: lighter;
+    margin-left: 30px;
+}
+
+.img-content img{ 
+    height: 300px;
+    margin-left: 40%;
+}
+
+.first-cards,
+.title{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 800px;
+    margin: 10px auto;
+}
+
+.title h3{
+    font-size: 24px;
+    text-align: left;
+    font-weight: bold;
+    padding: 30px 0 30px 0;
+}
+
+.first-cards .card img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.card-description p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.card-description .autor,
+.card-content-modal .autor{
+    font-size: 12px;
+    color: #777;
+}
+
+footer{
+    background-color: #eee;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    bottom:0;
+}
+
+/*About Page*/
+
+.about{
+    width: 800px;
+    margin: 10px auto;
+}
+
+.about h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.about h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: normal; 
+}
+
+.about p{
+    color: #111;
+    font-weight: normal;
+    font-size: 18px;
+    margin: 20px 0 20px;
+    line-height: 28px;
+}
+
+/*RECEITAS*/
+/*MODAL-OVERLAY*/
+
+.modal-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    top: 0;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*MODAL CARDS*/
+
+.modal{
+    margin: 10vh auto;
+    width: 50%;
+    height: 70%;
+    background-color:white;
+    position: relative;
+    border-radius: 16px;
+}
+
+.card-content-modal{
+    text-align: center;
+}
+
+.card-content-modal img{
+    margin-top: 10px;
+    width: 80%;
+    border-radius: 15px;
+}
+
+.card-content-modal p{
+    font-size: 24px;
+    padding: 5px;
+}
+
+.close-modal p{
+    font-size: 12px;
+    margin-top: 50px;
+    cursor: pointer;
+}
